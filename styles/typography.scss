@@ -1,0 +1,37 @@
+@font-face {
+  font-weight: 400;
+  font-family: 'Glober';
+  font-style: normal;
+  src: url('/fonts/globerthinfree.otf');
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: 'Glober';
+  font-style: normal;
+  src: url('/fonts/globersemiboldfree.otf');
+}
+
+@include media-breakpoint-up(lg) {
+  .header-main {
+    position: unset;
+  }
+}
+
+html {
+  @include media-breakpoint-up(xl) {
+    font-size: 100%;
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: 90%;
+  }
+
+  @include media-breakpoint-up(md) {
+    font-size: 80%;
+  }
+
+  @include media-breakpoint-up(sm) {
+    font-size: 70%;
+  }
+}

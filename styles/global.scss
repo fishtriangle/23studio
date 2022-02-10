@@ -1,0 +1,39 @@
+@import "~bootstrap/scss/bootstrap";
+@import "typography";
+@import "variables";
+@import "components/header/header";
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  height: 100vh;
+
+  font-family: Glober, sans-serif;
+
+  overflow-y: hidden;
+  background-color: $white;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+}
+
+a {
+  text-decoration: none;
+  color: $primary;
+}
+
+a:hover {
+  color: $primary;
+  text-decoration: underline;
+}
