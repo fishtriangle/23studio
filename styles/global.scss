@@ -1,19 +1,22 @@
 @import "~bootstrap/scss/bootstrap";
 @import "typography";
 @import "variables";
-@import "components/header/header";
+@import "../components/mainCard/mainCard";
+//@import "../components/header/header.module";
 
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
   height: 100vh;
 
-  font-family: Glober, sans-serif;
+  font-family: MPLUS1p, Glober, sans-serif;
+  font-size: 16px;
 
-  overflow-y: hidden;
+  //overflow-y: hidden;
   background-color: $white;
 }
 
@@ -34,6 +37,7 @@ a {
 }
 
 a:hover {
-  color: $primary;
-  text-decoration: underline;
+  color: $secondary;
 }
+
+

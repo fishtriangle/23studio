@@ -4,7 +4,7 @@ import React from "react";
 class MyDocument extends Document {
   render() {
     return (
-      <Html>
+      <Html lang={'ru'}>
         <Head>
           {/*<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />*/}
           {/*<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />*/}
