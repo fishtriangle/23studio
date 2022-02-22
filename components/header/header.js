@@ -1,27 +1,18 @@
 import {Container, Row} from "react-bootstrap";
 import Image from "next/image";
 import styles from './header.module.scss'
+import Logo from "../logo/logo";
 
 export default function Header() {
   return (
-    <Container className={"d-flex justify-content-md-between py-2 border-bottom flex-column flex-lg-row mb-5"}>
-      <div className={'d-flex justify-content-center justify-content-md-start'}>
-        <a href={'/'}>
-          <Image
-            src={'/img/headerLogo.jpg'}
-            alt={'23 studio logo'}
-            width={178}
-            height={50}
-          />
-        </a>
-      </div>
-
-      <div className={'d-flex align-items-center justify-content-center justify-content-md-start'}>
+    <Container className={"d-flex justify-content-lg-between py-2 border-bottom flex-column flex-lg-row mb-5"}>
+      <Logo />
+      <div className={'d-flex align-items-center justify-content-center justify-content-lg-start'}>
         <a href={'/'} className={'fs-3 pt-1 fw-normal'}>
           как нас найти?
         </a>
       </div>
-      <div className={'d-flex nowrap align-items-center justify-content-center justify-content-md-start'}>
+      <div className={'d-flex nowrap align-items-center justify-content-center justify-content-lg-start'}>
         <div>
           <p className={'mb-0 me-4 fs-3 pt-2 fw-bold'}>
             <a href={'/'}>

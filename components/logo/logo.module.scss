@@ -1,0 +1,66 @@
+.logo_glitch {
+  position: absolute;
+}
+
+.logo_glitch:nth-child(1) {
+  opacity: .8;
+  fill: #0ff;
+  display: block;
+
+}
+
+.logo_glitch:nth-child(2) {
+  opacity: 1;
+  fill: #f0f;
+  display: block;
+
+}
+
+.logo_glitch:nth-child(3) {
+  opacity: 1;
+  fill: #000;
+}
+
+.logo_box {
+  position: relative;
+  width: 200px;
+  height: 60px;
+  background-color: white;
+
+  &:hover > :nth-child(2n) {
+    animation: glitch-left .2s cubic-bezier(.25, .46, .45, .94) both infinite;
+  }
+
+  &:hover > :first-child {
+    animation: glitch-left-2 .2s cubic-bezier(.25, .46, .45, .94) reverse both infinite;
+  }
+}
+
+@keyframes glitch-left {
+  0% {
+    transform: translate(0)
+  }
+  33% {
+    transform: translate(-3px, 1px)
+  }
+  66% {
+    transform: translate(3px, -1px)
+  }
+  to {
+    transform: translate(0)
+  }
+}
+@keyframes glitch-left-2 {
+  0% {
+    transform: translate(0)
+  }
+  33% {
+    transform: translate(-3px, -1px)
+  }
+  66% {
+    transform: translate(3px, 1px)
+  }
+  to {
+    transform: translate(0)
+  }
+}
