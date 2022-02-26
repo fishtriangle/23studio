@@ -2,7 +2,7 @@
 @import "typography";
 @import "variables";
 @import "../components/mainCard/mainCard";
-//@import "../components/header/header.module";
+@import "../components/header/header";
 
 * {
   box-sizing: border-box;
@@ -40,4 +40,10 @@ a:hover {
   color: $secondary;
 }
 
+.flex-grow-1 {
+  flex: 1 0 auto;
+}
 
+.flex-grow-0 {
+  flex: 0 0 auto;
+}

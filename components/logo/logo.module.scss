@@ -28,11 +28,11 @@
   background-color: white;
 
   &:hover > :nth-child(2n) {
-    animation: glitch-left .2s cubic-bezier(.25, .46, .45, .94) both infinite;
+    animation: glitch-left .25s cubic-bezier(.25, .46, .45, .94) both infinite;
   }
 
   &:hover > :first-child {
-    animation: glitch-left-2 .2s cubic-bezier(.25, .46, .45, .94) reverse both infinite;
+    animation: glitch-left-2 .25s cubic-bezier(.25, .46, .45, .94) reverse both infinite;
   }
 }
 

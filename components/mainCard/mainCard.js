@@ -1,4 +1,6 @@
 import {Card} from "react-bootstrap";
+import Link from "next/link";
+import React from "react";
 
 export default function MainCard() {
   return (
@@ -28,11 +30,13 @@ export default function MainCard() {
           the card's content.
         </Card.Text>
       </Card.Body>
-      <a href={'/'}>
+      <Link href={'/project1'}>
+        <a>
           <span className={'main-card_btn'}>
             Go somewhere
           </span>
-      </a>
+        </a>
+      </Link>
     </Card>
   )
 }

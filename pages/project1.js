@@ -4,19 +4,17 @@ import React from "react";
 import {Container} from "react-bootstrap";
 import Head from "next/head";
 import Layout from "../components/layout/layout";
+import Footer from "../components/footer/footer";
 
 export default function Project1(props) {
   return (
     <Layout>
       <Head>
-        <title>Проект 1</title>
+        <title>23 studio</title>
       </Head>
-      <Header />
-      <Container>
-        <h1>Проект 1</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dolorem id laboriosam laudantium magni maxime minima odio omnis possimus quam quia, sunt voluptatum. Alias dolores fugiat minima sint ullam vero?</p>
-        <p><Link href={'/'}><a>Back</a></Link></p>
-      </Container>
+      <h1>Проект 1</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dolorem id laboriosam laudantium magni maxime minima odio omnis possimus quam quia, sunt voluptatum. Alias dolores fugiat minima sint ullam vero?</p>
+      <p><Link href={'/'}><a>Back</a></Link></p>
     </Layout>
   )
 }
