@@ -6,7 +6,7 @@ import Head from "next/head";
 import Layout from "../components/layout/layout";
 import Footer from "../components/footer/footer";
 
-export default function Project1(props) {
+export default function Beringia_animation(props) {
   return (
     <Layout>
       <Head>
